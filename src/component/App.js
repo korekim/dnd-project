@@ -3,8 +3,6 @@ import './App.css';
 
 import DiceSlide from "./dice-slider.js"
 import Slide from "./slide.js"
-import RightArrow from "./right-arrow.js"
-import LeftArrow from "./left-arrow.js"
 import SlideButtons from "./slide-buttons.js"
 
 
