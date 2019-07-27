@@ -59,13 +59,14 @@ changeSlides(id) {
   render() {
     return(
       <div className = "app">
+        <div className="header">
+          <h1>Encounter Tools</h1>
           <SlideButtons changeSlides={this.changeSlides}/>
+        </div>
         <div className="slider-wrapper"
             style={{
               transform: `translateX(${this.state.translateValue}%)`,
               transition: 'transform ease-out 0.45s',
-              display: 'flex',
-              flexDirection: 'row'
             }}>
 
           <DiceSlide
@@ -77,6 +78,9 @@ changeSlides(id) {
           />
           <Slide text="works!" order='1'/>
           <Slide text="works more!" order='2'/>
+        </div>
+        <div className="footer">
+          footer
         </div>
       </div>
     );

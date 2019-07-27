@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./dice-container.css"
 
 export default class DiceContainer extends React.Component {
     static propTypes = {
@@ -15,12 +16,9 @@ export default class DiceContainer extends React.Component {
     }
 
     render() {
-        const styles = {
-            padding: '5px',
-            zIndex: '0'
-        }
+
         return(
-            <div className="diceContainer" style={styles}>
+            <div className="diceContainer">
                 <form >
                     <label>
                         Roll:
@@ -28,6 +26,7 @@ export default class DiceContainer extends React.Component {
                         <input  
                             name="diceNumber"
                             type="number"
+                            placeholder="# of dice"
                             onChange={this.handleInputChange.bind(this)}
 
                         />
@@ -35,19 +34,32 @@ export default class DiceContainer extends React.Component {
                         <input  
                             name="diceType"
                             type="number"
+                            placeholder="dice type"
                             onChange={this.handleInputChange.bind(this)}
+                        />
+                        +
+                        <input
+                            name="modifier"
+                            class="modifier"
+                            placeholder="modifier"
+                            type="number"
                         />
                     </label>
                     <input 
                         type="button" 
                         value="Submit" 
+                        class="button"
                         onClick={ () => {
                                 this.props.clickHandler(this.props.diceNumber, this.props.diceType)
                             }
                         }
                     />
                 </form>
-                <h1>{this.props.roll}</h1>
+                <br></br>
+                <div className="outcome">
+                    <text>Outcome: </text>
+                    <h1>{this.props.roll}</h1>
+                </div>
             </div>
         )
     }

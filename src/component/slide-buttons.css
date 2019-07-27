@@ -1,0 +1,12 @@
+button {
+    display: 'flex';
+    flex-direction: 'row';
+    background-color: #368cbf;
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    width:100px
+
+}
