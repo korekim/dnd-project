@@ -1,33 +1,50 @@
-@media only screen and (min-width: 992px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 100%
+}
 
-  .app {
-    background-color: #eaeaea;
-    padding-bottom: 100%;
-  }
+.app {
+  background-color: #eaeaea;
+  padding-bottom: 100%;
+}
 
+.header {
+  background-color: #33363b;
+  color: white;
+  border: none;
+}
+.header-banner {
+  background-color: #368cbf;
+  display: block;
+  border: none;
+}
+.blue-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  background-color: #33363b;
+  text-align: center;
+  color:white;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 1200px) {
   .header {
-    background-color: #33363b;
-    color: white;
-    border: none;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 2%;
     font-size: 20px;
   }
 
-  .blue-bar {
-    display: flex;
-    flex-direction: row;
-  }
-
   .header-banner {
-    background-color: #368cbf;
-    display: block;
-    border: none;
     padding: 10px;
     font-size: 18px;
     width:70%;
@@ -42,14 +59,5 @@
     padding-left: 10%
   }
 
-  .footer {
-    position: fixed;
-    width: 100%;
-    background-color: #33363b;
-    text-align: center;
-    color:white;
-    padding: 2%;
-    left: 0;
-    bottom: 0;
-  }
+
 }

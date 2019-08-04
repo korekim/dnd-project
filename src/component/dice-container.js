@@ -30,7 +30,7 @@ export default class DiceContainer extends React.Component {
                             onChange={this.handleInputChange.bind(this)}
 
                         />
-                        d
+                        <text><strong>d</strong></text>
                         <input  
                             name="diceType"
                             type="number"
@@ -47,7 +47,7 @@ export default class DiceContainer extends React.Component {
                     </label>
                     <input 
                         type="button" 
-                        value="Submit" 
+                        value="Roll!" 
                         class="button"
                         onClick={ () => {
                                 this.props.clickHandler(this.props.diceNumber, this.props.diceType)
