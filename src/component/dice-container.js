@@ -8,7 +8,8 @@ export default class DiceContainer extends React.Component {
         diceNumber: PropTypes.number,
         clickHandler: PropTypes.func,
         changeHandler: PropTypes.func,
-        roll: PropTypes.number
+        roll: PropTypes.number,
+        modifier: PropTypes.number,
     };
 
     handleInputChange(event) {
@@ -22,7 +23,6 @@ export default class DiceContainer extends React.Component {
                 <form >
                     <label>
                         <h2>Dice:</h2>
-                        <br></br>
                         <input  
                             name="diceNumber"
                             type="number"
@@ -43,6 +43,7 @@ export default class DiceContainer extends React.Component {
                             class="modifier"
                             placeholder="modifier"
                             type="number"
+                            onChange={this.handleInputChange.bind(this)}
                         />
                     </label>
                     <input 
@@ -50,7 +51,7 @@ export default class DiceContainer extends React.Component {
                         value="Roll!" 
                         class="button"
                         onClick={ () => {
-                                this.props.clickHandler(this.props.diceNumber, this.props.diceType)
+                                this.props.clickHandler(this.props.diceNumber, this.props.diceType, this.props.modifier)
                             }
                         }
                     />

@@ -10,6 +10,7 @@ const DiceSlide = (props) => {
                 diceNumber={props.diceNumber}
                 clickHandler={props.handleClick}
                 changeHandler={props.handleInputChange}
+                modifier={props.modifier}
                 roll={props.roll}
             />
         </div>
