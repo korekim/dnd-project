@@ -7,7 +7,7 @@ const SlideButtons = (props) => {
         <div className="slide-buttons">
             <button class='dice' onClick={() => {props.changeSlides('0')}}>Dice</button>
             <button class='dice' onClick={() => {props.changeSlides('1')}}>works!</button>
-            <button class='dice' onClick={() => {props.changeSlides('2')}}>works more!</button>        </div>
+            <button class='dice' onClick={() => {props.changeSlides('2')}}>works 2</button>        </div>
     )
 }
 

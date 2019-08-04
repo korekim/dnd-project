@@ -1,16 +1,17 @@
 button {
     background-color: #368cbf;
-    display: inline-block; 
+    float: top; 
     border: none;
     position: relative;
     z-index: 1;
     margin: 0;
     color: white;
+    box-sizing: border-box;
 }
 
 @media only screen and (min-width: 992px) {
     button {
-        padding: 15px 20px;
+        padding: 15px;
         font-size: 18px;
         width: 140px;
 

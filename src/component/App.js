@@ -80,7 +80,7 @@ changeSlides(id) {
             roll={this.state.roll}
           />
           <Slide text="works!" order='1'/>
-          <Slide text="works more!" order='2'/>
+          <Slide text="works 2" order='2'/>
         </div>
         <div className="footer">
           footer
