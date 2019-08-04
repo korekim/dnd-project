@@ -11,7 +11,7 @@ class App extends React.Component { // Main component that gets rendered
     super(props);
     this.state = {
       diceType: 0,
-      diceNumber: 1,
+      diceNumber: 0,
       roll: 0,
       currentSlideIndex: 0,
       translateValue: 0

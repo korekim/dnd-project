@@ -19,6 +19,8 @@ html, body {
   background-color: #33363b;
   color: white;
   border: none;
+  text-align: center;
+  padding-top: 20px;
 }
 .header-banner {
   background-color: #368cbf;
@@ -31,6 +33,7 @@ html, body {
   flex-direction: row;
   z-index: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .footer {
@@ -39,9 +42,13 @@ html, body {
   background-color: #33363b;
   text-align: center;
   color:white;
-  padding: 2%;
+  padding: 5%;
   left: 0;
   bottom: 0;
+}
+
+.slider-wrapper {
+  width: 100%
 }
 
 @media only screen and (min-width: 1200px) {
@@ -52,6 +59,7 @@ html, body {
     padding-bottom: 1px;
     font-size: 20px;
     width: 100%;
+    text-align: left;
   }
 
   .header-banner {
@@ -71,5 +79,7 @@ html, body {
     padding-left: 10%
   }
 
-
+  .footer {
+    padding: 2%;
+  }
 }

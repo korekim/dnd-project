@@ -1,5 +1,9 @@
 .diceContainer {
     z-index: 0;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 18px;
+
 }
 
 .button {
@@ -7,27 +11,42 @@
     display: inline-block;
     border: none;
     color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 18px
 }
 
 input {
     box-sizing: border-box;
     outline: none;
     border: 2px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
 }
 
 .outcome {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    width: 100px
 }
 
 h1 {
     margin: 0
 }
 
+.outcome-text {
+    margin-top: 10px;
+    margin-right: 10px
+}
+
 @media only screen and (min-width: 992px) {
     .diceContainer {
-        padding-top: 5%;
         font-size: 18px;
+        text-align: left
     }
 
     .button {
@@ -48,8 +67,9 @@ h1 {
     .modifier {
         margin-left: 10px;
     }
-    text {
-        margin-top: 10px;
-        margin-right: 10px
+
+    .outcome {
+        margin: 0;
+        width: none;
     }
 }

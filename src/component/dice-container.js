@@ -57,7 +57,9 @@ export default class DiceContainer extends React.Component {
                 </form>
                 <br></br>
                 <div className="outcome">
-                    <text>Outcome: </text>
+                    <div className="outcome-text">
+                        <text>Outcome: </text>
+                    </div>
                     <h1>{this.props.roll}</h1>
                 </div>
             </div>

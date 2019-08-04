@@ -1,16 +1,20 @@
 button {
-    background-color: #368cbf;
-    float: top; 
+    background-color: #368cbf; 
     border: none;
     position: relative;
     z-index: 1;
-    margin: 0;
     color: white;
     box-sizing: border-box;
+    padding: 10px;
+    font-size: 18px;
+    width: 137px;
+    display: inline-block;
+    margin-top: 10px
 }
 
 @media only screen and (min-width: 992px) {
     button {
+        margin-top: 0;
         padding: 15px;
         font-size: 18px;
         width: 140px;
