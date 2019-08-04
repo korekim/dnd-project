@@ -61,7 +61,10 @@ changeSlides(id) {
       <div className = "app">
         <div className="header">
           <h1>Encounter Tools</h1>
-          <SlideButtons changeSlides={this.changeSlides}/>
+          <div className="blue-bar">
+            <SlideButtons changeSlides={this.changeSlides}/>
+            <div className="header-banner"></div>
+          </div>
         </div>
         <div className="slider-wrapper"
             style={{

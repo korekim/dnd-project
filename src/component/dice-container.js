@@ -21,7 +21,7 @@ export default class DiceContainer extends React.Component {
             <div className="diceContainer">
                 <form >
                     <label>
-                        Roll:
+                        <h2>Dice:</h2>
                         <br></br>
                         <input  
                             name="diceNumber"
