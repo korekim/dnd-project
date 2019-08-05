@@ -37,12 +37,12 @@ html, body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: #33363b;
   text-align: center;
   color:white;
-  padding: 5%;
+  padding: 3%;
   left: 0;
   bottom: 0;
   right: 0;

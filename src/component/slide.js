@@ -7,7 +7,7 @@ const Slide = (props) => {
             style={{
                 marginLeft: `${props.order*100}%`,
                 position: 'absolute',
-                zIndex: `${props.order}`
+                zIndex: `${props.order}`,
             }}>
             <h1>{props.text}</h1>
         </div>

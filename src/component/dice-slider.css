@@ -1,4 +1,6 @@
-.diceSlide {
-    display: flex;
-    flex-direction: row
+@media only screen and (min-width: 1200px) {
+    .diceSlide {
+        display: flex;
+        flex-direction: row
+    }
 }
