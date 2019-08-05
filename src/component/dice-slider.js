@@ -1,8 +1,11 @@
 import React from "react";
 
 import DiceContainer from "./dice-container.js"
+import DiceHistory from "./dice-history.js"
 
-const DiceSlide = (props) => {
+import"./dice-slider.css"
+
+const DiceSlide = props => {
     return(
         <div className="diceSlide">
             <DiceContainer 
@@ -13,6 +16,7 @@ const DiceSlide = (props) => {
                 modifier={props.modifier}
                 roll={props.roll}
             />
+            <DiceHistory diceHistory={props.diceHistory}/>
         </div>
     )
 }

@@ -37,7 +37,7 @@ html, body {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
   background-color: #33363b;
   text-align: center;
@@ -45,6 +45,7 @@ html, body {
   padding: 5%;
   left: 0;
   bottom: 0;
+  right: 0;
 }
 
 .slider-wrapper {

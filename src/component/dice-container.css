@@ -1,9 +1,7 @@
 .diceContainer {
     z-index: 0;
     padding-top: 3%;
-    text-align: center;
     font-size: 18px;
-
 }
 
 .button {
@@ -14,7 +12,8 @@
     padding: 10px;
     width: 100%;
     margin-top: 5%;
-    font-size: 18px
+    font-size: 18px;
+    text-align: center
 }
 
 input {
@@ -46,7 +45,8 @@ h1 {
 @media only screen and (min-width: 992px) {
     .diceContainer {
         font-size: 18px;
-        text-align: left
+        text-align: left;
+        width: 800px;
     }
 
     .button {
@@ -61,7 +61,8 @@ h1 {
         border-radius: 1px;
         margin-right: 10px;
         padding: 7px;
-        font-size: 18px
+        font-size: 18px;
+        text-align: left;
     }
 
     .modifier {

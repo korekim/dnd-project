@@ -15,7 +15,8 @@ class App extends React.Component { // Main component that gets rendered
       roll: 0,
       currentSlideIndex: 0,
       translateValue: 0,
-      modifier: 0
+      modifier: 0,
+      diceHistory: [],
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -35,7 +36,7 @@ handleClick(diceNumbers, diceTypes, modifiers) {
     diceNumber: diceNumbers,
     modifier: modifiers,
     roll: outcome,
-
+    diceHistory: this.state.diceHistory.concat(diceNumbers.toString() + 'd' + diceTypes.toString() + ' + ' + modifiers.toString() + ': ' + outcome.toString())
   });
 }
 
@@ -76,6 +77,7 @@ changeSlides(id) {
             handleClick={this.handleClick}
             handleInputChange={this.handleInputChange}
             roll={this.state.roll}
+            diceHistory = {Array.from(this.state.diceHistory)}
           />
           <Slide text="works!" order='1'/>
           <Slide text="works 2" order='2'/>

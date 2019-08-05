@@ -1,0 +1,20 @@
+.dice-history {
+    border-color: #ccc;
+    background-color: white;
+    border: 5px;
+    height: 500px;
+    width: 500px;
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: fixed;
+    overflow: auto;
+}
+
+.history-title {
+    text-align: center
+}
+
+.history-text {
+    margin-left: 10px
+}
